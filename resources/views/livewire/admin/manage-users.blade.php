@@ -1,6 +1,6 @@
 <div class="p-6 bg-white rounded-2xl shadow-md space-y-6">
     <div class="flex justify-between items-center">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-6">จัดการผู้ใช้งาน</h2>
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">จัดการผู้ใช้งาน...</h2>
     </div>
 
     <div class="overflow-x-auto">
