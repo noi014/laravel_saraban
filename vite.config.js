@@ -13,14 +13,14 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
-    build: {
+     base: '/build/', // สำคัญมากเมื่อ deploy
+     build: {
         outDir: 'public/build',
-        manifest: true,
+        //manifest: true,        // ✅ สำคัญ!
         rollupOptions: {
             input: 'resources/js/app.js',
         },
     },
-    base: '/build/', // ✅ สำคัญมาก!
     server: {
         cors: true,
     },
