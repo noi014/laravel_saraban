@@ -29,8 +29,7 @@
                     {{-- <flux:navlist.item icon="page" :href="route('articles.index')" :current="request()->routeIs('articles.index')" wire:navigate>{{ __('Articles') }}</flux:navlist.item> --}}
                     <flux:navlist.item icon="arrow-left-circle" :href="route('officialletter.index')" :current="request()->routeIs('officialletter.index')" wire:navigate>{{ __('หนังสือรับ') }}</flux:navlist.item>
                      <flux:navlist.item icon="arrow-right-circle" :href="route('outgoing-letters')" :current="request()->routeIs('outgoing-letters')" wire:navigate>{{ __('หนังสือส่ง') }}</flux:navlist.item>
-                  <flux:navlist.item icon="arrow-right-start-on-rectangle" :href="route('sending-letters')" :current="request()->routeIs('sending-letters
-                  ')" wire:navigate>{{ __('หนังสือส่ง ว.') }}</flux:navlist.item>
+                  <flux:navlist.item icon="arrow-right-start-on-rectangle" :href="route('sending-letters')" :current="request()->routeIs('sending-letters')" wire:navigate>{{ __('หนังสือส่ง ว.') }}</flux:navlist.item>
                   <flux:navlist.item icon="lock-closed" :href="route('command-manager')" :current="request()->routeIs('command-manager')" wire:navigate>{{ __('คำสั่ง') }}</flux:navlist.item>
                     <flux:navlist.item icon="megaphone" :href="route('announcement-manager')" :current="request()->routeIs('announcement-manager')" wire:navigate>{{ __('ประกาศ') }}</flux:navlist.item>
                    <flux:navlist.item icon="pencil-square" :href="route('memo-manager')" :current="request()->routeIs('memo-manager')" wire:navigate>{{ __('บันทึก') }}</flux:navlist.item>
