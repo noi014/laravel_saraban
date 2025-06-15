@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 // Import Schema
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\URL;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -22,6 +23,9 @@ class AppServiceProvider extends ServiceProvider
     {
         //
          // Add the following line
+          if (app()->environment('production')) {
+        URL::forceScheme('https');
+    }
     Schema::defaultStringLength(191);
     }
 }
