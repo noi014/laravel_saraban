@@ -4,7 +4,9 @@
  <head>
         @include('partials.head')
       
-       
+       <!-- ✅ CSS -->
+    @vite('resources/css/app.css')
+    @livewireStyles
     </head>
     
     <body class="min-h-screen bg-white dark:bg-zinc-800">
@@ -199,5 +201,7 @@
     {{-- <script defer src="https://unpkg.com/alpinejs@3.14.9/dist/cdn.min.js"></script> --}}
         <livewire:scripts />
         <livewire:styles />
+        @vite('resources/js/app.js')
+       {{--  @livewireScripts --}}
     </body>
 </html>
