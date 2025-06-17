@@ -123,7 +123,7 @@
          <h2 class="text-2xl font-bold mb-4">
                 {{ $memoId ? 'แก้ไข' : 'เพิ่ม' }} ประกาศ
         </h2>
-    <form wire:submit.prevent="save"  enctype="multipart/form-data">
+    <form wire:submit.prevent="save"  enctype="multipart/form-data" method="POST">
             <div class="bg-white rounded p-6 w-full max-w-xl">
            
         <flux:input label="เลขที่" wire:model.defer="memo_number" />
