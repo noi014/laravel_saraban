@@ -28,9 +28,9 @@
 /public/storage
 /storage/*.key
 /storage/app/*
-!/storage/app/public
 /storage/framework/*
 /storage/logs/*
+!storage/app/public/**
 .env
 .env.*.backup
 

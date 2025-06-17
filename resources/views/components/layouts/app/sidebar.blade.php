@@ -202,6 +202,6 @@
         <livewire:scripts />
         <livewire:styles />
         @vite('resources/js/app.js')
-       {{--  @livewireScripts --}}
+        @livewireScripts
     </body>
 </html>
