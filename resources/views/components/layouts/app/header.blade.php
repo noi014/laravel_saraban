@@ -3,6 +3,7 @@
         
     <head>
         @include('partials.head')
+        
     </head>
   
     <body class="min-h-screen bg-white dark:bg-zinc-800">
@@ -122,5 +123,8 @@
         {{ $slot }}
 
         @fluxScripts
+        <livewire:scripts />
+        <livewire:styles />
+        @vite('resources/js/app.js')
     </body>
 </html>
